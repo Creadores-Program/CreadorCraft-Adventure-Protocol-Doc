@@ -25,3 +25,4 @@ La respuesta del Servidor puede ser desconexión (si fallo la autenticación) o 
 - 0x09 Nintendo Switch
 - 0x10 Xbox
 - 0x11 PlayStation
+- 0x12 Web
