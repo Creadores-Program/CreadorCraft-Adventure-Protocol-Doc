@@ -15,7 +15,8 @@ Y la fórmula para tener el length máximo del array es:
 int length = maxX * maxY;
 ```
 
+
 | **Packet ID** | **Nombre** | **Tipo** | **Ejemplo** | **Notas** |
 | :--- | :--- | :--- | :--- | :--- |
-|  | MaxX | short | 200 | Cantidad máxima de bloques en el mundo por enviar |
+|  | MaxX | short | 200 | Cantidad máxima de bloques X en el mundo por enviar |
 | 0x05 | Bloques | short[] | short[...] | Cantidad exacta de bloques por ID del mundo |
