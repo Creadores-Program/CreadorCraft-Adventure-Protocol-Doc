@@ -3,9 +3,9 @@ Este es el primer Datapacket que debe enviar el Cliente con información Básica
 
 | **Packet ID** | **Nombre** | **Tipo** | **Ejemplo** | **Notas** |
 | :--- | :--- | :--- | :--- | :--- |
-|  | Plataforma | byte | 0x01 (Android) | Plataforma del Cliente (más abajo documentación de este campo) |
+|  | Plataforma | unsigned byte | 0x01 (Android) | Plataforma del Cliente (más abajo documentación de este campo) |
 |  | Idioma | short | 25971 (es) | Idioma tipo ISO-639-1 codificado en 2 bytes |
-|  | Versión de Protocolo | byte | 0x01 | Versión del Protocolo de red |
+|  | Versión de Protocolo | unsigned byte | 0x01 | Versión del Protocolo de red |
 | 0x01 | Discord ID | long | 293849... | ID de usuario de Discord |
 |  | Token | byte[32] | [...] | Token obtenido por la API de CreadorCraft |
 |  | UserName | String | "maxpro" | Nombre de usuario único de Discord |
