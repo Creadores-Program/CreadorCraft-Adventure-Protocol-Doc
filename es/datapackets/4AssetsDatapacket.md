@@ -4,7 +4,7 @@ Las URL deben ser compatibles con http y https y con verificación por CRC32
 | **Packet ID** | **Nombre** | **Tipo** | **Ejemplo** | **Notas** |
 | :--- | :--- | :--- | :--- | :--- |
 |  | Url Base | String | "`www.asset.com/`" | La URL base sin Protocolo para descargar assets |
-| 0x04 | Cantidad | short | 55 | Cantidad de assets que tiene el datapacket |
+| 0x04 | Cantidad | unsigned short | 55 | Cantidad de assets que tiene el datapacket |
 |  | Recursos | asset[] | asset[...] | Un array de assets según la cantidad |
 
 La URL se formularia así:
