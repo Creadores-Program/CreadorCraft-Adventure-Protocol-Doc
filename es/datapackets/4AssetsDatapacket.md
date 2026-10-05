@@ -43,8 +43,8 @@ Ejemplo:
 este es el contenido de un asset en el array del datapacket:
 | **Nombre** | **Tipo** | **Ejemplo** | **Notas** |
 | :--- | :--- | :--- | :--- |
-| ID | short | 1 | ID del Recurso para llamarlo en el juego (no puedes usar 0x00 ya que está en uso para vacío, en caso de audio es sonido click) |
-| Versión | byte | 0x01 | Versión del recurso para procesar la caché en el juego si la versión no coincide se descarga de nuevo el recurso |
+| ID | unsigned short | 1 | ID del Recurso para llamarlo en el juego (no puedes usar 0x00 ya que está en uso para vacío, en caso de audio es sonido click) |
+| Versión | unsigned byte | 0x01 | Versión del recurso para procesar la caché en el juego si la versión no coincide se descarga de nuevo el recurso |
 | Tipo | unsigned byte | 0x01 | Tipo de recurso que es |
 | Verificación | int | 5 | Verificación de 4 bytes tipo CRC32 del recurso |
 
