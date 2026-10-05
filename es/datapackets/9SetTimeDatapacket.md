@@ -3,4 +3,4 @@ se envia en cualquier momento para cambiar el tiempo si el ambiente está activo
 
 | **Packet ID** | **Nombre** | **Tipo** | **Ejemplo** | **Notas** |
 | :--- | :--- | :--- | :--- | :--- |
-| 0x09 | Tiempo | short | 3000 | Tiempo en ticks del juego |
+| 0x09 | Tiempo | unsigned short | 3000 | Tiempo en ticks del juego |
