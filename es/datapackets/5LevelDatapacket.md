@@ -18,5 +18,5 @@ int length = maxX * maxY;
 
 | **Packet ID** | **Nombre** | **Tipo** | **Ejemplo** | **Notas** |
 | :--- | :--- | :--- | :--- | :--- |
-|  | MaxX | short | 200 | Cantidad máxima de bloques X en el mundo por enviar |
+|  | MaxX | unsigned short | 200 | Cantidad máxima de bloques X en el mundo por enviar |
 | 0x05 | Bloques | short[] | short[...] | Cantidad exacta de bloques por ID del mundo |
