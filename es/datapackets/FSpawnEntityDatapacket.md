@@ -2,9 +2,9 @@
 Este datapacket lo envía el servidor, se usa para spawnear entidades o jugadores que no son el jugador actual en el mundo con 2 IDs, un id de entidad definida en Assets Datapacket y otro id de entidad del mundo
 
 Las posiciones se multiplican entre 100 ejemplo:
-´´´java
+```java
 short x = 12.60 * 100; //1260
-´´´
+```
 
 | **Packet ID** | **Nombre** | **Tipo** | **Ejemplo** | **Notas** |
 | :--- | :--- | :--- | :--- | :--- |
