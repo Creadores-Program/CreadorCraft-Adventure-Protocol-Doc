@@ -4,4 +4,7 @@ Este datapacket lo envía el servidor, se usa para spawnear entidades o jugadore
 | **Packet ID** | **Nombre** | **Tipo** | **Ejemplo** | **Notas** |
 | :--- | :--- | :--- | :--- | :--- |
 |  | Entidad ID | unsigned short | 1 | Entidad/Skin con el cual se muestra la Entidad |
-| 0x0F | ID Mundial | unsigned short | 5 | Id unico de la entidad que diferencia de las demas en el mundo |
+|  | ID Mundial | unsigned short | 5 | Id unico de la entidad que diferencia de las demas en el mundo |
+| 0x0F | X | float | 10.6 | Posición X de la entidad |
+|  | Y | float | 14.2 | Posición Y de la entidad |
+|  | Nombre | String | "Max" | Nombre de la entidad (se puede dejar vacio) |
