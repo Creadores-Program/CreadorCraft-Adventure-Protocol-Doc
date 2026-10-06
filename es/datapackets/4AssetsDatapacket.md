@@ -1,6 +1,6 @@
 # Assets Datapacket
 Este datapacket lo envía el servidor justo después de LoginDatapacket para avisar que recursos necesita por url.
-Las URL deben ser compatibles con http y https y con verificación por CRC32
+Las URL deben ser compatibles con https.
 | **Packet ID** | **Nombre** | **Tipo** | **Ejemplo** | **Notas** |
 | :--- | :--- | :--- | :--- | :--- |
 |  | Url Base | String | "`www.asset.com/`" | La URL base sin Protocolo para descargar assets |
@@ -9,33 +9,33 @@ Las URL deben ser compatibles con http y https y con verificación por CRC32
 
 La URL se formularia así:
 
-`protocolo://urlBase/b/id.png` para bloques
+`https://urlBase/b/id.png` para bloques
 
-`protocolo://urlBase/e/id.png` para entidades
+`https://urlBase/e/id.png` para entidades
 
-`protocolo://urlBase/a/id.ogg` para audios
+`https://urlBase/a/id.ogg` para audios
 
-`protocolo://urlBase/i/id.png` para ítems
+`https://urlBase/i/id.png` para ítems
 
-`protocolo://urlBase/f/id.png` para fondos del mundo
+`https://urlBase/f/id.png` para fondos del mundo
 
 Los siguientes urls no necesitan ID así que el ID se ignora puedes poner cualquier valor.
 
-`protocolo://urlBase/sun.png` para el Sol
+`https://urlBase/sun.png` para el Sol
 
-`protocolo://urlBase/moon.png` para la Luna
+`https://urlBase/moon.png` para la Luna
 
-`protocolo://urlBase/click.ogg` para sonido de Click
+`https://urlBase/click.ogg` para sonido de Click
 
-`protocolo://urlBase/daycloud.png` para Nube de Día
+`https://urlBase/daycloud.png` para Nube de Día
 
-`protocolo://urlBase/nightcloud.png` para Nube de Noche
+`https://urlBase/nightcloud.png` para Nube de Noche
 
-`protocolo://urlBase/raincloud.png` para nube de Lluvia
+`https://urlBase/raincloud.png` para nube de Lluvia
 
-`protocolo://urlBase/raindrop.png` para gota de Lluvia
+`https://urlBase/raindrop.png` para gota de Lluvia
 
-`protocolo://urlBase/ruby.png` para Rubí
+`https://urlBase/ruby.png` para Rubí
 
 Ejemplo:
 
@@ -48,7 +48,6 @@ este es el contenido de un asset en el array del datapacket:
 | ID | unsigned short | 1 | ID del Recurso para llamarlo en el juego (no puedes usar 0x00 ya que está en uso para vacío, en caso de audio es sonido click) |
 | Versión | unsigned byte | 0x01 | Versión del recurso para procesar la caché en el juego si la versión no coincide se descarga de nuevo el recurso |
 | Tipo | unsigned byte | 0x01 | Tipo de recurso que es |
-| Verificación | int | 5 | Verificación de 4 bytes tipo CRC32 del recurso |
 
 ### Tipos de Recursos
 - 0x01 Bloque
