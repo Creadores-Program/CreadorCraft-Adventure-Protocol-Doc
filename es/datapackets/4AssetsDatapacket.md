@@ -35,6 +35,8 @@ Los siguientes urls no necesitan ID así que el ID se ignora puedes poner cualqu
 
 `protocolo://urlBase/raindrop.png` para gota de Lluvia
 
+`protocolo://urlBase/ruby.png` para Rubí
+
 Ejemplo:
 
 `https://www.asset.com/i/55.png`
@@ -61,3 +63,4 @@ este es el contenido de un asset en el array del datapacket:
 - 0x10 Nube de Lluvia
 - 0x11 Gota de Lluvia
 - 0x12 Fondo
+- 0x13 Rubí
