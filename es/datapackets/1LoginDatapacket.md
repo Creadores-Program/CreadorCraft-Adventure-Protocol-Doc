@@ -7,7 +7,7 @@ Este es el primer Datapacket que debe enviar el Cliente con información Básica
 |  | Idioma | short | 25971 (es) | Idioma tipo ISO-639-1 codificado en 2 bytes |
 |  | Versión de Protocolo | unsigned byte | 0x01 | Versión del Protocolo de red |
 | 0x01 | Discord ID | long | 293849... | ID de usuario de Discord |
-|  | Token | byte[32] | [...] | Token obtenido por la API de CreadorCraft |
+|  | Ticket | byte[6] | [...] | Ticket obtenido por la API de CreadorCraft |
 |  | UserName | String | "maxpro" | Nombre de usuario único de Discord |
 
 La respuesta del Servidor puede ser desconexión (si fallo la autenticación) o continuar la conexión.
@@ -23,7 +23,12 @@ La respuesta del Servidor puede ser desconexión (si fallo la autenticación) o 
 - 0x06 Solaris
 - 0x07 Raspberry Pi
 - 0x08 iOS
-- 0x09 Nintendo Switch
+- 0x09 Nintendo
+- 0x0A PSP
+- 0x0B PS Vita
+- 0x0C Symbian OS
+- 0x0D BlackBerry
+- 0x0E Palm OS
 - 0x10 Xbox
 - 0x11 PlayStation
 - 0x12 Web
