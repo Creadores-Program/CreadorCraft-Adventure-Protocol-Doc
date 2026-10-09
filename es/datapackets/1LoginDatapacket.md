@@ -4,11 +4,9 @@ Este es el primer Datapacket que debe enviar el Cliente con información Básica
 | **Packet ID** | **Nombre** | **Tipo** | **Ejemplo** | **Notas** |
 | :--- | :--- | :--- | :--- | :--- |
 |  | Plataforma | unsigned byte | 0x01 (Android) | Plataforma del Cliente (más abajo documentación de este campo) |
-|  | Idioma | short | 25971 (es) | Idioma tipo ISO-639-1 codificado en 2 bytes |
+| 0x01 | Idioma | short | 25971 (es) | Idioma tipo ISO-639-1 codificado en 2 bytes |
 |  | Versión de Protocolo | unsigned byte | 0x01 | Versión del Protocolo de red |
-| 0x01 | Discord ID | long | 293849... | ID de usuario de Discord |
 |  | Ticket | byte[6] | [...] | Ticket obtenido por la API de CreadorCraft |
-|  | UserName | String | "maxpro" | Nombre de usuario único de Discord |
 
 La respuesta del Servidor puede ser desconexión (si fallo la autenticación) o continuar la conexión.
 
