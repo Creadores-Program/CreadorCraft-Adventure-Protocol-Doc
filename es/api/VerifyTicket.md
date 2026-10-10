@@ -5,7 +5,7 @@ Usa una petición a: ``
 
 Tipo POST en `application/octet-stream`
 
-Escribe el Ticket, longitud de tu IP de tu servidor en unsigned byte y la IP de tu servidor en bytes.
+Escribe el Ticket, longitud de tu dirección de tu servidor en unsigned byte y la dirección de tu servidor en bytes.
 
 Si la respuesta es 200 OK
 Te retornará la información del jugador en `application/octet-stream`
