@@ -7,4 +7,4 @@ Tipo POST en `application/octet-stream`
 
 Escribe el código de verificación de 6 dígitos en bytes que se obtiene de la forma de inicio de sesión.
 
-La respuesta es unsigned short para la longitud del nombre del jugador, nombre del jugador en bytes, y un token de 32 bytes.
+La respuesta es unsigned byte para la longitud del nombre del jugador, nombre del jugador en bytes, y un token de 32 bytes (**NUNCA DEBE COMPARTIRSE EL TOKEN**).
