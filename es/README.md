@@ -85,3 +85,5 @@ El ciclo de vida de la conexión y la secuencia de sincronización inicial entre
 | **`0x1D`** | **`ChatDatapacket`** | Bidireccional | Envía o transmite mensajes de texto dentro del chat del juego. | 
 | **`0x1E`** | **`MoveDatapacket`** | Bidireccional | Sincroniza las posiciones de movimiento de entidades o jugadores (`pos * 100`). | 
 | **`0x1F`** | **`UIDatapacket`** | Bidireccional | Renderiza o responde a interfaces de usuario modulares (`ModalUI`, `SimpleUI`, `CustomUI`). | 
+| **`0x20`** | **`PlaySoundDatapacket`** | Servidor $\rightarrow$ Cliente | Reproducir un archivo de audio de tipo asset según su ID numérico. |
+| **`0x21`** | **`StopSoundDatapacket`** | Servidor $\rightarrow$ Cliente | Detener un audio que se esté reproduciendo de los recursos de tipo asset por su ID. |
