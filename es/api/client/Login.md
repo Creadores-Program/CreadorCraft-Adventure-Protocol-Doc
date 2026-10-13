@@ -1,7 +1,7 @@
 # Login
 Este se usa para obtener un token de inicio de sesión para generar Tickets de cuenta.
 
-Usa una petición a: ``
+Usa una petición a: `https://creadorcraft-adventure-auth.onrender.com/login`
 
 Tipo POST en `application/octet-stream`
 
