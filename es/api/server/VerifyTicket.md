@@ -1,7 +1,7 @@
 # Verify Ticket
 Este se usa para verificar el ticket del jugador y saber que no es invalido
 
-Usa una petición a: ``
+Usa una petición a: `https://creadorcraft-adventure-auth.onrender.com/verify-ticket`
 
 Tipo POST en `application/octet-stream`
 
