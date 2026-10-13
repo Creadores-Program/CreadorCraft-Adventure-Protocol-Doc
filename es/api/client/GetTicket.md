@@ -1,7 +1,7 @@
 # GetTicket
 Este se usa para generar tickets para entrar a servidores de 6 bytes de unico uso y solo valido 10 segundos se hace justo antes de conectar a un servidor.
 
-Usa una petición a: ``
+Usa una petición a: `https://creadorcraft-adventure-auth.onrender.com/get-ticket`
 
 Tipo POST en `application/octet-stream`
 
