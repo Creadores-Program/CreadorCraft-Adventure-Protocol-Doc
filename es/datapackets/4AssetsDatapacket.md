@@ -13,7 +13,7 @@ La URL se formularia así:
 
 `https://urlBase/e/id.png` para entidades
 
-`https://urlBase/a/id.ogg` para audios
+`https://urlBase/a/id.ogg` para audios en caso de J2ME el ogg se cambia por wav: `https://urlBase/a/id.wav` por baja resolución (PCM 8 kHz / 8-bit mono), en la urlBase debes tener ambos archivos en caso de no tener wav debes desconectar al jugador antes de mandar este datapacket.
 
 `https://urlBase/i/id.png` para ítems
 
@@ -25,15 +25,13 @@ Los siguientes urls no necesitan ID así que el ID se ignora puedes poner cualqu
 
 `https://urlBase/moon.png` para la Luna
 
-`https://urlBase/click.ogg` para sonido de Click
+`https://urlBase/click.ogg` para sonido de Click en caso de J2ME el ogg se cambia por wav: `https://urlBase/click.wav` por baja resolución (PCM 8 kHz / 8-bit mono), en la urlBase debes tener ambos archivos en caso de no tener wav debes desconectar al jugador antes de mandar este datapacket.
 
 `https://urlBase/daycloud.png` para Nube de Día
 
 `https://urlBase/nightcloud.png` para Nube de Noche
 
 `https://urlBase/raincloud.png` para nube de Lluvia
-
-`https://urlBase/raindrop.png` para gota de Lluvia
 
 `https://urlBase/ruby.png` para Rubí
 
@@ -49,6 +47,11 @@ este es el contenido de un asset en el array del datapacket:
 | Versión | unsigned byte | 0x01 | Versión del recurso para procesar la caché en el juego si la versión no coincide se descarga de nuevo el recurso |
 | Tipo | unsigned byte | 0x01 | Tipo de recurso que es |
 
+### Resoluciones de Imágenes tipo Assets Recomendadas
+- Bloques, Item, Sol, Luna y Rubí: 16px x 16px
+- Nubes: 32px x 32px
+- Fondo: recomendamos diferentes fondos según Plataformas antiguas a modernas, 854px x 480px para modernos y 240px x 320px para dispositivos antiguos (J2ME, Palm OS, PSP, PS Vita, Symbian OS, etc.)
+
 ### Tipos de Recursos
 - 0x01 Bloque
 - 0x02 Entidad
@@ -60,6 +63,5 @@ este es el contenido de un asset en el array del datapacket:
 - 0x08 Nube de Día
 - 0x09 Nube de Noche
 - 0x10 Nube de Lluvia
-- 0x11 Gota de Lluvia
-- 0x12 Fondo
-- 0x13 Rubí
+- 0x11 Fondo
+- 0x12 Rubí
