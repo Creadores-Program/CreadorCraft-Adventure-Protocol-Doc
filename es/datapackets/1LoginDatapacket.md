@@ -27,6 +27,7 @@ La respuesta del Servidor puede ser desconexión (si fallo la autenticación) o 
 - 0x0C Symbian OS
 - 0x0D BlackBerry
 - 0x0E Palm OS
+- 0x0F Firefox OS
 - 0x10 Xbox
 - 0x11 PlayStation
 - 0x12 Web
