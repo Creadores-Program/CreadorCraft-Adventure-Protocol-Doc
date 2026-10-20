@@ -38,3 +38,4 @@ La respuesta del Servidor puede ser desconexión (si fallo la autenticación) o 
 - 0x17 WebOS
 - 0x18 Tizen OS
 - 0x19 Chrome OS
+- 0x1A Fire OS
