@@ -34,3 +34,7 @@ La respuesta del Servidor puede ser desconexión (si fallo la autenticación) o 
 - 0x13 Windows Phone
 - 0x14 Windows
 - 0x15 Java
+- 0x16 KaiOS
+- 0x17 WebOS
+- 0x18 Tizen OS
+- 0x19 Chrome OS
